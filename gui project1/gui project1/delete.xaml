@@ -1,0 +1,26 @@
+﻿<Window x:Class="gui_project1.delete"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:gui_project1"
+        mc:Ignorable="d"
+        Title="delete" Height="450" Width="800">
+    <Grid Background="#FF438CEB">
+        <DataGrid x:Name="datagrid" HorizontalAlignment="Left" Height="227" Margin="111,109,0,0" VerticalAlignment="Top" Width="568" Background="White" SelectedCellsChanged="DataGrid_SelectedCellsChanged" CurrentCellChanged="datagrid_CurrentCellChanged" MouseDoubleClick="datagrid_MouseDoubleClick"/>
+        <Button x:Name="btndelete" Margin="579,341,0,0" Background="#FFE6E9EE" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="122" Height="50" Foreground="#FFE6E9EE" Click="btndelete_Click" >
+            <StackPanel Orientation="Horizontal">
+                <Image Source="delete.png" Stretch="Uniform" Height="49" Width="118"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="cancel" Margin="454,341,0,0" Background="#FFE6E9EE" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="120" Height="50" Foreground="#FFE6E9EE" Click="cancel_Click"  >
+            <StackPanel Orientation="Horizontal">
+                <Image Source="cancel-hi.png" Stretch="Uniform" Height="44" Width="110"/>
+            </StackPanel>
+        </Button>
+        <Label Content="DELETE" HorizontalAlignment="Left" Margin="310,10,0,0" VerticalAlignment="Top" Width="189" Foreground="#FFFFFBFB" FontSize="30"/>
+        <Label x:Name="lblurl" Content="WEBSITE URL :" HorizontalAlignment="Left" Margin="124,78,0,0" VerticalAlignment="Top" Width="157" Foreground="White"/>
+        <TextBox x:Name="txturl" HorizontalAlignment="Left" Height="23" Margin="214,81,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="465"/>
+
+    </Grid>
+</Window>

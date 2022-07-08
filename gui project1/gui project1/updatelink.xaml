@@ -1,0 +1,17 @@
+﻿<Window x:Class="gui_project1.updatelink"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:gui_project1"
+        mc:Ignorable="d"
+        Title="updatelink" Height="250" Width="400">
+    <Grid Background="#FF438CEB">
+        <Label Content="UPDATE" HorizontalAlignment="Left" Margin="133,10,0,0" VerticalAlignment="Top" FontSize="30" Foreground="White"/>
+        <Label x:Name="lblurl" Content="WEBSITE URL :" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="36,75,0,0" Width="107" Foreground="#FFFFFBFB"/>
+        <TextBox x:Name="txturl" HorizontalAlignment="Left" Height="26" Margin="167,75,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="175"/>
+        <Button x:Name="btnlinkfinder" Content="SEARCH" HorizontalAlignment="Left" Margin="267,145,0,0" VerticalAlignment="Top" Width="75" Background="#FF438CEB" Foreground="White" OpacityMask="#FFF00000" BorderBrush="#FF7E0404" Click="btnlinkfinder_Click"/>
+        <Button x:Name="btnclose" Content="CLOSE" HorizontalAlignment="Left" Margin="187,145,0,0" VerticalAlignment="Top" Width="75" Background="#FFD31111" Foreground="White"/>
+
+    </Grid>
+</Window>

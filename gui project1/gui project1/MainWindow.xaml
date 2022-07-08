@@ -1,0 +1,28 @@
+﻿<Window x:Class="gui_project1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:gui_project1"
+        mc:Ignorable="d"
+        Title="Dashboard" Height="625" Width="1250" FontFamily="Arial Black">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Menu HorizontalAlignment="Left" Height="338" Margin="10,90,0,0" VerticalAlignment="Top" Width="132" Background="#FFF9FBFD" Foreground="White">
+            <Button Height="53" Width="118" Background="#FF438CEB" Content="NEW PASSWORD" Click="Button_Click" Foreground="White"/>
+            <Button Height="53" Width="118" Cursor="Pen" Background="#FF438CEB" Content="SEARCH PASSWORD" Click="Button_Click_1" Foreground="#FFF9F5F5"/>
+            <Button x:Name="btndelete" Height="53" Width="118" Background="#FF438CEB" Click="Button_Click_3" Content="UPDATE" Foreground="White"/>
+            <Button x:Name="btndelete1" Height="53" Width="118" Background="#FF438CEB" Content="DELETE" Click="btndelete1_Click" Foreground="#FFF5EDED"/>
+            <Button Background="#FF438CEB" Content="REFRESH" Height="53" Width="118" Click="Button_Click_2" Foreground="#FFF7F2F2"/>
+            <Button Height="53" Width="118" Background="#FF438CEB" Click="Button_Click_4" Content="LOGOUT" Foreground="#FFF7F2F2"/>
+        </Menu>
+        <DataGrid HorizontalAlignment="Left" Height="584" Margin="150,0,0,0" VerticalAlignment="Top" Width="634"/>
+        <DataGrid x:Name="datagridview" HorizontalAlignment="Left" Margin="150,0,0,10" Width="1082" Background="#FF438CEB" Height="584" VerticalAlignment="Bottom" SelectionChanged="datagridview_SelectionChanged" SelectionMode="Single" SelectionUnit="Cell" FontSize="14"/>
+
+    </Grid>
+</Window>
